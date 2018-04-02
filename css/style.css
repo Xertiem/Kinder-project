@@ -5,35 +5,38 @@ body {
 }
 
 .wrapper {
-    background-color: white;
+    background-image: url("../img/dots.png");
     display: flex;
-    border: 10px solid  goldenrod;
+    /*border: 10px solid  goldenrod;*/          /*Removed border, used for Testing*/
     border-radius: 20px;
     min-height:97vh;
     justify-content:space-around;
     max-width: 70%;
-    margin: 0 auto;
-    flex-wrap: wrap;                    /*Parts for Responsive Image*/
+    margin: 25px auto;                          /*Added margin to auto, so it can center*/
+    flex-wrap: wrap;                            /*Parts for Responsive Image*/
 }
 
 .page {
-    min-width: 0;                       /*Parts for Responsive Image*/
-    margin: 5px;                        /*Parts for Responsive Image*/
+    min-width: 0;                                   /*Parts for Responsive Image*/
+    /*margin: 5px;*/                                /*Parts for Responsive Image - But removed for the time being*/
 }
 
 /*Responsive Image with Flexbox.*/
 .img_header {
-    width: 200vh;
+    /*width: 200vh;*/                               /*Removed while the temporary fix is there*/
     max-width: 100%; 
     max-height: 450px;
     justify-content: space-around;
+    width: 100%;                                    /*Could be a fix to a responsive image*/
+    height: auto;                                   /*Could be a fix to a responsive image*/
 }
 
 #main-nav {
     display: flex;
-    border: 5px solid  mediumslateblue ;
+    /*border: 5px solid  mediumslateblue ;*/         /*Removed border, used for Testing*/
     justify-content: space-around;
     flex-wrap: wrap;
+
 }
 
 
@@ -44,14 +47,25 @@ body {
     text-shadow:4px 4px 0 rgba(0,0,0,0.1);
     padding:10px;
     text-decoration: none;
-    border-radius: 15px 0;
+    border-radius: 15px 5px;
     margin: 10px;
 
 }
 
-.box1 { background:#1abc9c;}
-.box2 { background:#3498db;}
-.box3 { background:#9b59b6;}
-.box4 { background:#34495e;}
-.box5 { background:#f1c40f;}
-.box6 { background:#e67e22;}
+.box1 { background:#f7d850;}
+.box2 { background:#98ef71;}
+.box3 { background:#9bb6f5;}
+.box4 { background:#9b6a9f;}
+.box5 { background:#f4769b;}
+.box6 { background:#f9af50;}
+
+.content {
+    background-color: white;
+    border: 10px solid #f7d850 ;
+    border-radius: 20px;
+    margin-top: -10px;
+}
+
+.main_content {
+    border: 5px solid deepskyblue ;
+}
