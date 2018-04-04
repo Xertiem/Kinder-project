@@ -4,6 +4,16 @@ body {
     background-size: auto;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+p + p, li + li {
+    margin-top: 14px;                           /*space between paragraphs*/
+}
+
 .wrapper {
     background-image: url("../img/dots.png");
     display: flex;
@@ -11,7 +21,7 @@ body {
     border-radius: 20px;
     min-height:97vh;
     justify-content:space-around;
-    max-width: 70%;
+    max-width: 90%;
     margin: 25px auto;                          /*Added margin to auto, so it can center*/
     flex-wrap: wrap;                            /*Parts for Responsive Image*/
 }
@@ -21,10 +31,17 @@ body {
     /*margin: 5px;*/                                /*Parts for Responsive Image - But removed for the time being*/
 }
 
+.tele_header {
+    padding: 20px;                                  /*small extra padding so it has some space from the sides*/
+}
+
 /*Responsive Image with Flexbox.*/
 .img_header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     /*width: 200vh;*/                               /*Removed while the temporary fix is there*/
-    max-width: 100%; 
+    max-width: 80%; 
     max-height: 450px;
     justify-content: space-around;
     width: 100%;                                    /*Could be a fix to a responsive image*/
@@ -40,7 +57,7 @@ body {
 }
 
 
-.box {
+.nav_button {
     color:white;
     font-size: 35px;
     text-align: center;
@@ -60,12 +77,37 @@ body {
 .box6 { background:#f9af50;}
 
 .content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
     background-color: white;
     border: 10px solid #f7d850 ;
     border-radius: 20px;
     margin-top: -10px;
 }
 
+.main_list {
+    border: 5px solid chartreuse;
+    padding:10px;
+    /*margin: 5px;*/
+    flex: 2;
+}
+
 .main_content {
-    border: 5px solid deepskyblue ;
+    border: 5px solid deepskyblue;
+    padding:10px;
+    /*margin: 5px;
+    margin-left: 50px;*/
+    flex: 6;
+}
+
+.content_image {
+    border: 5px solid green;
+    padding: 25px;
+}
+
+.content_text {
+    border: 5px solid black;
+    padding: 25px;
+    margin: 10px 0;
 }
